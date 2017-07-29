@@ -33,6 +33,15 @@
       };
 
     """
+  'React ES6 registerComponent':
+    'prefix': 'rreg'
+    'body': """
+      import React from 'react'
+      import { AppRegistry } from 'react-native'
+      import MainApp from './src/MainApp'
+
+      AppRegistry.registerComponent('${1}', () => MainApp)
+    """
   'React ES6 Constructor':
     'prefix': 'rconst'
     'body': """
